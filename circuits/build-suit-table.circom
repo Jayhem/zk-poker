@@ -8,13 +8,18 @@ The 4 MSb represent the card value (0000 = no card, 0001 = Ace, 0010 = 2, ... , 
 
     signal input cards[nbPlayer][7];
     signal output suits[4];
-    var tmp_suits = 0;
+    var tmp_suits[4];
+/* do not know how to initialize each value to 0 other than loop */
+    for (var k = 0; k<4; k++) {
+	tmp_suits[k]=0; }
     for (var i = 0; i<nbPlayer; i++) {
 	for (var j = 0; j<7; j++) {
 	component binCard = Num2Bits(6);	
-	tmp_suits[binCard[0]*2 + binCard[1]*1] +=1;
+	binCard.in <== cards[i][j];
+	tmp_suits[binCard.out[0]*2 + binCard.out[1]*1] +=1;
 	}
-   suits <== tmp_suits;	
-}
+    }
+    for (var k = 0; k<4; k++) {
+        suits[k] <== tmp_suits[k]; }   
 }
 component main = SuitTable(2);
