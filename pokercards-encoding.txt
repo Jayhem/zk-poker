@@ -1,0 +1,27 @@
+0 - no  card
+1 - Ace of Diamonds
+2 - Two of Diamonds
+...
+13 - King of Diamonds
+14 - invalid
+15 - invalid
+16 - no card
+17 - Ace of Hearts
+18 - Two of Hearts
+...
+29 - King of Hearts
+30 - invalid
+31 - invalid
+32 - no card
+33 - Ace of Spades
+...
+45 - King of Spades
+46 - invalid
+47 - invalid
+48 - no card
+49 - Ace of Clubs
+50 - Two of Clubs
+...
+61 - King of Clubs
+62 - invalid
+63 - invalid
