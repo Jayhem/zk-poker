@@ -5,7 +5,7 @@ template Parity() {
    signal output odd;
 	
 /* transform test value to binary, if odd output 1, if even output 0 */ 
-	component parity = Num2Bits(1);	
+	component parity = Num2Bits(8);	
 	parity.in <== test;
 	odd <== parity.out[0];
 }

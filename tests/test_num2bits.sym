@@ -2,3 +2,10 @@
 2,1,0,main.odd
 3,2,1,main.parity.in
 4,1,1,main.parity.out[0]
+5,3,1,main.parity.out[1]
+6,4,1,main.parity.out[2]
+7,5,1,main.parity.out[3]
+8,6,1,main.parity.out[4]
+9,7,1,main.parity.out[5]
+10,8,1,main.parity.out[6]
+11,9,1,main.parity.out[7]
